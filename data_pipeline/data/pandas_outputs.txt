@@ -1,0 +1,88 @@
+PANDAS SQL ANALYSIS
+======================================================================
+
+RESULT 1 - pd.read_sql()
+                                                title  price_gbp  rating
+0                  1,000 Places to See Before You Die      26.08       5
+1              A Time of Torment (Charlie Parker #14)      48.35       5
+2   Demigods & Magicians: Percy and Annabeth Meet ...      37.51       5
+3    Every Heart a Doorway (Every Heart A Doorway #1)      12.16       5
+4   Harry Potter and the Half-Blood Prince (Harry ...      48.75       5
+5   Immunity: How Elie Metchnikoff Changed the Cou...      57.36       5
+6            King's Folly (The Kinsman Chronicles #1)      39.61       5
+7               Paper and Fire (The Great Library #2)      49.45       5
+8    Princess Between Worlds (Wide-Awake Princess #5)      13.34       5
+9   The Bachelor Girl's Guide to Murder (Herringfo...      52.30       5
+10           The Beast (Black Dagger Brotherhood #14)      46.08       5
+11  The Disappearing Spoon: And Other True Tales o...      57.35       5
+12       The False Prince (The Ascendance Trilogy #1)      56.00       5
+13                                  The Girl You Lost      12.29       5
+14                  The Silkworm (Cormoran Strike #2)      23.05       5
+15                             The Star-Touched Queen      46.02       5
+16  What Happened on Beale Street (Secrets of the ...      25.37       5
+17      A Feast for Crows (A Song of Ice and Fire #4)      17.21       4
+18        A Gathering of Shadows (Shades of Magic #2)      44.81       4
+19                   A Year in Provence (Provence #1)      56.88       4
+20                                                Ash      22.06       4
+21          City of Glass (The Mortal Instruments #3)      56.02       4
+22   Delivering the Truth (Quaker Midwife Mystery #1)      20.89       4
+23  Full Moon over Noahâs Ark: An Odyssey to Mou...      49.43       4
+24  Harry Potter and the Order of the Phoenix (Har...      31.63       4
+25                                    Heir to the Sky      44.07       4
+26  Murder at the 42nd Street Library (Raymond Amb...      54.36       4
+27                                Myriad (Prentor #1)      58.75       4
+28                     Seven Brief Lessons on Physics      30.60       4
+29                 Shadow Rites (Jane Yellowrock #10)      21.72       4
+30                                      Sharp Objects      47.82       4
+31  Sorting the Beef from the Bull: The Science of...      44.74       4
+32    The Bane Chronicles (The Bane Chronicles #1-11)      44.73       4
+33  The Elegant Universe: Superstrings, Hidden Dim...      13.03       4
+34  The Most Perfect Thing: Inside (and Outside) a...      42.96       4
+35    The Murder of Roger Ackroyd (Hercule Poirot #4)      44.10       4
+36  The Mysterious Affair at Styles (Hercule Poiro...      24.80       4
+37  The No. 1 Ladies' Detective Agency (No. 1 Ladi...      57.70       4
+38                              The Origin of Species      10.01       4
+39                                The Past Never Ends      56.50       4
+40                The Raven Boys (The Raven Cycle #1)      57.74       4
+41  The Rose & the Dagger (The Wrath and the Dawn #2)      58.64       4
+
+RESULT 2 - pd.read_sql()
+                                               title  price_gbp
+0                      Boar Island (Anna Pigeon #19)      59.48
+1                                Myriad (Prentor #1)      58.75
+2  The Rose & the Dagger (The Wrath and the Dawn #2)      58.64
+3                The Raven Boys (The Raven Cycle #1)      57.74
+4  The No. 1 Ladies' Detective Agency (No. 1 Ladi...      57.70
+5  Immunity: How Elie Metchnikoff Changed the Cou...      57.36
+6  The Disappearing Spoon: And Other True Tales o...      57.35
+7                   A Year in Provence (Provence #1)      56.88
+8        A Shard of Ice (The Black Symphony Saga #1)      56.63
+9                                The Past Never Ends      56.50
+
+SQL JOIN RESULT
+                                               title  price_gbp  rating category_name
+0                 1,000 Places to See Before You Die      26.08       5        Travel
+1             A Time of Torment (Charlie Parker #14)      48.35       5       Mystery
+2  Demigods & Magicians: Percy and Annabeth Meet ...      37.51       5       Fantasy
+3   Every Heart a Doorway (Every Heart A Doorway #1)      12.16       5       Fantasy
+4  Harry Potter and the Half-Blood Prince (Harry ...      48.75       5       Fantasy
+5  Immunity: How Elie Metchnikoff Changed the Cou...      57.36       5       Science
+6           King's Folly (The Kinsman Chronicles #1)      39.61       5       Fantasy
+7              Paper and Fire (The Great Library #2)      49.45       5       Fantasy
+8   Princess Between Worlds (Wide-Awake Princess #5)      13.34       5       Fantasy
+9  The Bachelor Girl's Guide to Murder (Herringfo...      52.30       5       Mystery
+
+PANDAS pd.merge() RESULT
+                                               title  price_gbp  rating category_name
+0                 1,000 Places to See Before You Die      26.08       5        Travel
+1             A Time of Torment (Charlie Parker #14)      48.35       5       Mystery
+2  Demigods & Magicians: Percy and Annabeth Meet ...      37.51       5       Fantasy
+3   Every Heart a Doorway (Every Heart A Doorway #1)      12.16       5       Fantasy
+4  Harry Potter and the Half-Blood Prince (Harry ...      48.75       5       Fantasy
+5  Immunity: How Elie Metchnikoff Changed the Cou...      57.36       5       Science
+6           King's Folly (The Kinsman Chronicles #1)      39.61       5       Fantasy
+7              Paper and Fire (The Great Library #2)      49.45       5       Fantasy
+8   Princess Between Worlds (Wide-Awake Princess #5)      13.34       5       Fantasy
+9  The Bachelor Girl's Guide to Murder (Herringfo...      52.30       5       Mystery
+
+SQL JOIN and pd.merge() match: True

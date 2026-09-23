@@ -1,0 +1,29 @@
+MODULE 2 - PART B - STEP 7
+REGRESSION SIDE-TASK - PREDICT FARE
+======================================================================
+
+Target: fare
+
+Features used:
+- pclass
+- age
+- sibsp
+- parch
+- sex
+- embarked
+
+Regression Metrics:
+MAE: 20.8094
+RMSE: 30.4731
+R2: 0.3999
+Adjusted R2: 0.3679
+
+Test observations: 179
+Predictors after encoding: 9
+
+Residual Analysis:
+Mean residual: -6.304270
+Residual standard deviation: 29.897532
+
+Heteroscedasticity conclusion:
+Residual spread increases noticeably as predicted fare increases, suggesting heteroscedasticity.

@@ -1,0 +1,16 @@
+MODULE 2 - PART B: RANDOM FOREST GRIDSEARCHCV
+======================================================================
+
+Best Parameters:
+classifier__max_depth: 5
+classifier__max_features: sqrt
+classifier__n_estimators: 100
+
+Best CV F1-score: 0.7459
+OOB Score: 0.8272
+
+Test Set Performance:
+Accuracy: 0.8156
+Precision: 0.8750
+Recall: 0.6087
+F1-score: 0.7179

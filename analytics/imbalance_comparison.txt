@@ -1,0 +1,19 @@
+MODULE 2 - PART B: CLASS IMBALANCE COMPARISON
+======================================================================
+
+Dataset class balance:
+survived
+0    549
+1    342
+
+Class percentages:
+Class 0: 61.62%
+Class 1: 38.38%
+
+
+Comparison:
+               Method  Precision  Recall  F1-Score
+             Baseline     0.7931  0.6667    0.7244
+Class Weight Balanced     0.7297  0.7826    0.7552
+                SMOTE     0.7397  0.7826    0.7606
+

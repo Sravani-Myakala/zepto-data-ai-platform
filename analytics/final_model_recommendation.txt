@@ -1,0 +1,42 @@
+
+FINAL MODEL RECOMMENDATION
+===========================
+
+The three classification models were evaluated using the same
+stratified train/test split.
+
+Logistic Regression:
+Accuracy = 0.8045
+Precision = 0.7931
+Recall = 0.6667
+F1 = 0.7244
+AUC = 0.8437
+
+Decision Tree:
+Accuracy = 0.7654
+Precision = 0.7547
+Recall = 0.5797
+F1 = 0.6557
+AUC = 0.7971
+
+Random Forest:
+Accuracy = 0.8156
+Precision = 0.8000
+Recall = 0.6957
+F1 = 0.7442
+AUC = 0.8287
+
+Based on the measured test-set F1 score, Random Forest has the
+highest F1 score among the three models in this comparison.
+
+Its measured test-set metrics are:
+Accuracy = 0.8156
+Precision = 0.8000
+Recall = 0.6957
+F1 = 0.7442
+AUC = 0.8287
+
+Therefore, Random Forest is selected as the final classifier
+for this experiment based on the observed F1 score. The complete
+preprocessing and classifier pipeline has been saved as a single
+Joblib file so that raw input can be passed directly to the model.
