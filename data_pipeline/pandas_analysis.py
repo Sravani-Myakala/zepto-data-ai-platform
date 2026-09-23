@@ -5,7 +5,7 @@ import pandas as pd
 # DATABASE CONNECTION
 # =========================================================
 
-database_file = "data/books.db"
+database_file = "data_pipeline/data/books.db"
 
 conn = sqlite3.connect(database_file)
 
@@ -165,7 +165,7 @@ else:
 # SAVE OUTPUT
 # =========================================================
 
-output_file = "data/pandas_outputs.txt"
+output_file = "data_pipeline/data/pandas_outputs.txt"
 
 with open(output_file, "w", encoding="utf-8") as file:
 
