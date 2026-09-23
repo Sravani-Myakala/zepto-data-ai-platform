@@ -702,3 +702,6 @@ The main missing
 ## Git Workflow
 
 The project was developed using a feature branch and merged into the main branch after validation.
+
+
+**Git validation:** The feature branch contains multiple commits and is merged into main after project validation.
