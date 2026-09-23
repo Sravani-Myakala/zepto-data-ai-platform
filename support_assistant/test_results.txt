@@ -1,0 +1,23 @@
+Module 3 RAG Support Assistant - Test Results
+
+1. Policy-based question:
+Question: Can I cancel my order before it is dispatched?
+Result: Correct answer generated from the Zepto policy.
+
+2. Unsupported policy question:
+Question: Do you provide a 50% refund for damaged items?
+Result: I couldn't find that information in the available Zepto policy.
+
+3. Payment issue:
+Question: What should I do if my payment was deducted but my order was not created?
+Result: Customer should contact support with the transaction details.
+
+RAG components tested successfully:
+- Zepto policy document
+- Recursive text splitting
+- Hugging Face embeddings
+- ChromaDB vector store
+- LangChain retrieval
+- Hugging Face LLM
+- Context-grounded responses
+- Hallucination prevention for unavailable information
