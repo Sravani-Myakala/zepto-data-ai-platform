@@ -698,3 +698,7 @@ The main missing
 
 
 
+
+## Git Workflow
+
+The project was developed using a feature branch and merged into the main branch after validation.
