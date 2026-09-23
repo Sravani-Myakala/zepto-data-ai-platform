@@ -1,29 +1,11 @@
-MODULE 2 - PART B - STEP 7
-REGRESSION SIDE-TASK - PREDICT FARE
-======================================================================
-
-Target: fare
-
-Features used:
-- pclass
-- age
-- sibsp
-- parch
-- sex
-- embarked
-
-Regression Metrics:
+TITANIC FARE REGRESSION RESULTS
+==================================================
 MAE: 20.8094
 RMSE: 30.4731
 R2: 0.3999
 Adjusted R2: 0.3679
-
-Test observations: 179
-Predictors after encoding: 9
-
-Residual Analysis:
-Mean residual: -6.304270
-Residual standard deviation: 29.897532
+Predictor count: 9
+Test rows: 179
 
 Heteroscedasticity conclusion:
-Residual spread increases noticeably as predicted fare increases, suggesting heteroscedasticity.
+The residual spread changes with predicted fare, suggesting possible heteroscedasticity.

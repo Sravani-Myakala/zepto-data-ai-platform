@@ -1,0 +1,27 @@
+
+FINAL MODELING SUMMARY
+======================
+
+Three classification models were evaluated using the same stratified
+80/20 train-test split: Logistic Regression, Decision Tree, and
+Random Forest.
+
+GridSearchCV was used to tune the Random Forest using 5-fold
+cross-validation and F1 score. The selected Random Forest parameters
+were {'classifier__max_depth': 5, 'classifier__max_features': 'sqrt', 'classifier__n_estimators': 100}, with a cross-validation F1 score of
+0.7459 and an OOB score of
+0.8272.
+
+The tuned Random Forest was then evaluated on the held-out test set,
+achieving accuracy=0.8156, precision=0.8750,
+recall=0.6087, F1=0.7179, and
+AUC-ROC=0.8431.
+
+For class imbalance, baseline Random Forest, class_weight='balanced',
+and SMOTE were compared using the same test set. SMOTE was applied
+only to the training data through an imbalanced-learn pipeline.
+
+For fare regression, Linear Regression achieved MAE=20.8094,
+RMSE=30.4731, R2=0.3999, and Adjusted R2=0.3679.
+The residual analysis was used to assess whether the error spread
+changes with predicted fare.
